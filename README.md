@@ -8,11 +8,18 @@ All emails are collected in `data/emails.txt`.
 
 ## How to run
 
-0. Install Docker (or Podman preferably)
-1. `git clone https://github.com/asi-pwr/rejestracja.git`
-2. `./run.sh`
+1. Install Docker (or Podman preferably)
+2. `docker run -it --rm -v "./data:/usr/src/app/data" -p "127.0.0.1:9292:9292" ghcr.io/asi-pwr/rejestracja:latest`
 3. Go to `http://localhost:9292`
 4. Emails are saved in `data/emails.txt`
+
+## Development
+
+1. `git clone https://github.com/asi-pwr/rejestracja.git`
+2. Make your changes
+3. `./build-and-run.sh`
+4. Go to `http://localhost:9292`
+5. Emails are saved in `data/emails.txt`
 
 ## Under the hood
 
