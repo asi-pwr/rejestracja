@@ -1,0 +1,12 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    = preload_assets_link_tags(:css)
+    = assets(:css)
+    %link{:href => "https://unpkg.com/@picocss/pico@latest/css/pico.min.css", :rel => "stylesheet"}/
+    %title Rekrutacja ASI #{Time.now.year}
+  %body
+    %main.container
+      = yield   

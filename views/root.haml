@@ -1,0 +1,11 @@
+%div
+    .center
+        %img{src: "/logo.svg", width: "50%"}
+    - if flash['thanks']
+        .center
+            %kbd Na podany email prześlemy informacje o spotkaniu rekrutacyjnym
+    %form(action="/" method="post")
+        %label{for: "email"}
+        %input{type: "email", name: "email", id: "email", placeholder: "Twój adres email", required: true}
+        %small Skontaktujemy się z Tobą pod wskazanym adresem w celu przekazania informacji o spotkaniu rekrutacyjnym
+        %input{type: "submit"}

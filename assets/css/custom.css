@@ -1,0 +1,10 @@
+:root {
+    --primary: #e85d03;
+}
+
+.center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
